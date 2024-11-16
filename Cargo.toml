@@ -1,7 +1,0 @@
-[package]
-name = "Forge"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-dialoguer = "0.11.0"
