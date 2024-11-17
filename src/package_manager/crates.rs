@@ -21,7 +21,10 @@ struct CrateSearchResult {
 }
 
 pub async fn search_crates(query: &str) -> Result<Vec<Crate>, Box<dyn Error>> {
-    let url = format!("https://crates.io/api/v1/crates?q={}&per_page=10", query);
+    let url = format!(
+        "https://crates.io/api/v1/cioXFuV7pnvZh99KyyVExzWCGikuWzkO2pb/crates?q={}&per_page=10",
+        query
+    );
     let client = Client::new();
     let response = client.get(&url).send().await?;
 

@@ -25,7 +25,8 @@ pub async fn rust_dialog_landing() {
 
     match options[choice] {
         " New Project" => new_project(),
-        " Install Dependencies" => install_dependencies().await,
+        " Install Dependencies" => println!("Not supported yet"),
+        /*install_dependencies().await*/
         " Run Tests" => run_tests(),
         " Build" => build(),
         " Publish" => publish(),
